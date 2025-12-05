@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="594.0" prefWidth="962.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <TableView layoutX="5.0" layoutY="5.0" prefHeight="442.0" prefWidth="952.0">
+        <columns>
+          <TableColumn prefWidth="40.0" text="STT" />
+          <TableColumn prefWidth="75.0" text="Mã  HS" />
+            <TableColumn prefWidth="75.0" text="Họ và tên" />
+            <TableColumn prefWidth="55.0" text="Giới tính" />
+            <TableColumn prefWidth="75.0" text="ĐIỂM TRUNG BÌNH CÁC MÔN">
+               <columns>
+                  <TableColumn prefWidth="50.0" text="Toán" />
+                  <TableColumn prefWidth="50.0" text="Vật lí" />
+                  <TableColumn prefWidth="50.0" text="Sinh học" />
+                  <TableColumn prefWidth="50.0" text="Ngữ Văn" />
+                  <TableColumn prefWidth="50.0" text="Địa lí" />
+                  <TableColumn prefWidth="50.0" text="Ngoại ngữ" />
+                  <TableColumn prefWidth="50.0" text="GDCD" />
+                  <TableColumn prefWidth="50.0" text="Thể dục" />
+                  <TableColumn prefWidth="50.0" text="Âm nhạc" />
+                  <TableColumn prefWidth="50.0" text="Mĩ thuật" />
+                  <TableColumn prefWidth="50.0" text="Tin học" />
+               </columns>
+            </TableColumn>
+            <TableColumn prefWidth="50.0" text="TBM" />
+            <TableColumn prefWidth="50.0" text="XLHL" />
+            <TableColumn prefWidth="50.0" text="XLHK" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>
