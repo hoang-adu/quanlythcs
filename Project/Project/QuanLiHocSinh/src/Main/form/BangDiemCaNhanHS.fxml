@@ -1,89 +1,153 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.layout.ColumnConstraints?>
-<?import javafx.scene.layout.GridPane?>
-<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="539.0" prefWidth="804.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="410.0" prefWidth="810.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <GridPane hgap="20.0" layoutX="160.0" layoutY="50.0" prefHeight="119.0" prefWidth="498.0">
-         <columnConstraints>
-            <ColumnConstraints hgrow="SOMETIMES" maxWidth="105.20001220703125" minWidth="10.0" prefWidth="70.79998779296875" />
-            <ColumnConstraints hgrow="SOMETIMES" maxWidth="149.20001220703125" minWidth="10.0" prefWidth="149.20001220703125" />
-            <ColumnConstraints hgrow="SOMETIMES" maxWidth="101.20001220703125" minWidth="10.0" prefWidth="83.59994506835938" />
-            <ColumnConstraints hgrow="SOMETIMES" maxWidth="139.60000610351562" minWidth="10.0" prefWidth="128.40005493164062" />
-         </columnConstraints>
-         <rowConstraints>
-            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-         </rowConstraints>
-         <children>
-            <Label text="Họ tên :" />
-            <Label text="Ngày sinh :" GridPane.rowIndex="1" />
-            <Label text="Mã HS:" GridPane.rowIndex="2" />
-            <Label text="Lớp :" GridPane.columnIndex="2" GridPane.rowIndex="1" />
-            <Label text="Số điện thoại :" GridPane.columnIndex="2" GridPane.rowIndex="2" />
-            <Label text="Label" GridPane.columnIndex="1" />
-            <Label text="Label" GridPane.columnIndex="1" GridPane.rowIndex="1" />
-            <Label text="Label" GridPane.columnIndex="1" GridPane.rowIndex="2" />
-            <Label text="Label" GridPane.columnIndex="3" GridPane.rowIndex="1" />
-            <Label text="Label" GridPane.columnIndex="3" GridPane.rowIndex="2" />
-            <Label text="Label" GridPane.columnIndex="3" />
-            <Label text="Quê quán :" GridPane.columnIndex="2" />
-         </children>
-      </GridPane>
-      <ImageView fitHeight="160.0" fitWidth="140.0" layoutX="5.0" layoutY="5.0" pickOnBounds="true" smooth="false">
-         <image>
-            <Image url="@../img/img_none.png" />
-         </image>
-      </ImageView>
-      <VBox alignment="TOP_CENTER" layoutX="5.0" layoutY="176.0">
-         <children>
-            <Label text="Bảng điểm các môn học kỳ cả năm">
-               <font>
-                  <Font name="Arial Bold" size="18.0" />
-               </font>
-            </Label>
-            <TableView prefHeight="333.0" prefWidth="477.0">
-              <columns>
-                <TableColumn editable="false" prefWidth="100.0" sortable="false" text="Môn học" />
-                  <TableColumn editable="false" prefWidth="75.0" sortable="false" text="Điểm thành phần">
-                     <columns>
-                      <TableColumn editable="false" prefWidth="75.0" sortable="false" text="miệng" />
-                        <TableColumn editable="false" prefWidth="75.0" sortable="false" text="15'" />
-                        <TableColumn editable="false" prefWidth="75.0" sortable="false" text="1 tiết" />
-                        <TableColumn editable="false" prefWidth="75.0" sortable="false" text="giữa kì" />
-                        <TableColumn editable="false" prefWidth="75.0" sortable="false" text="cuối kì" />
-                     </columns>
-                  </TableColumn>
-              </columns>
-            </TableView>
-         </children>
-      </VBox>
-      <VBox layoutX="495.0" layoutY="176.0">
-         <children>
-            <Label text="Kết quả học tập của học kỳ cả năm">
-               <font>
-                  <Font name="Arial Bold" size="18.0" />
-               </font>
-            </Label>
-            <TableView prefHeight="334.0" prefWidth="300.0">
-              <columns>
-                <TableColumn editable="false" prefWidth="100.0" sortable="false" />
-                <TableColumn editable="false" prefWidth="200.0" sortable="false" />
-              </columns>
-            </TableView>
-         </children>
-      </VBox>
+      <TabPane layoutX="5.0" layoutY="5.0" prefHeight="398.0" prefWidth="798.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+            <Tab text="Trang chính">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <VBox layoutX="208.0" layoutY="50.0" prefHeight="107.0" prefWidth="119.0" spacing="5.0">
+                           <children>
+                              <Label text="Họ tên :">
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font>
+                              </Label>
+                              <Label text="Label" />
+                              <Label text="Mã HS :">
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font>
+                              </Label>
+                              <Label text="Label" />
+                              <Label text="Giới tính :">
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font>
+                              </Label>
+                              <Label text="Label" />
+                              <Label text="Ngày sinh :">
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font>
+                              </Label>
+                              <Label text="Label" />
+                              <Label text="Quê quán :">
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font>
+                              </Label>
+                              <Label text="Label" />
+                           </children>
+                        </VBox>
+                        <VBox layoutX="540.0" layoutY="50.0" prefHeight="126.0" prefWidth="118.0" spacing="5.0">
+                           <children>
+                              <Label text="Lớp :">
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font>
+                              </Label>
+                              <Label text="Label" />
+                              <Label text="Chức vụ :">
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font>
+                              </Label>
+                              <Label text="Label" />
+                              <Label text="Số điện thoại :">
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font></Label>
+                              <Label text="Label" />
+                              <Label text="Trạng thái :">
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font></Label>
+                              <Label text="Label" />
+                           </children>
+                        </VBox>
+                        <ImageView fitHeight="160.0" fitWidth="140.0" layoutX="29.0" layoutY="95.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/img_none.png" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="339.0" layoutY="19.0" text="THÔNG TIN CƠ BẢN">
+                           <font>
+                              <Font name="Arial Bold" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+          <Tab text="Thông tin học tập">
+               <content>
+                  <HBox alignment="TOP_CENTER" prefHeight="346.0" prefWidth="798.0" spacing="5.0">
+                     <children>
+                        <VBox alignment="TOP_CENTER" prefHeight="245.0" prefWidth="478.0">
+                           <children>
+                              <Label text="Bảng điểm các môn học kỳ năm">
+                                 <font>
+                                    <Font name="Arial Bold" size="18.0" />
+                                 </font>
+                              </Label>
+                              <TableView prefHeight="333.0" prefWidth="478.0">
+                                 <columns>
+                                    <TableColumn editable="false" prefWidth="100.0" sortable="false" text="Môn học" />
+                                    <TableColumn editable="false" prefWidth="75.0" sortable="false" text="Điểm thành phần">
+                                       <columns>
+                                          <TableColumn editable="false" prefWidth="75.0" sortable="false" text="miệng" />
+                                          <TableColumn editable="false" prefWidth="75.0" sortable="false" text="15'" />
+                                          <TableColumn editable="false" prefWidth="75.0" sortable="false" text="1 tiết" />
+                                          <TableColumn editable="false" prefWidth="75.0" sortable="false" text="giữa kì" />
+                                          <TableColumn editable="false" prefWidth="75.0" sortable="false" text="cuối kì" />
+                                       </columns>
+                                    </TableColumn>
+                                 </columns>
+                                 <VBox.margin>
+                                    <Insets />
+                                 </VBox.margin>
+                              </TableView>
+                           </children>
+                        </VBox>
+                        <VBox alignment="TOP_CENTER">
+                           <children>
+                              <Label text="Kết quả học tập của học kỳ năm">
+                                 <font>
+                                    <Font name="Arial Bold" size="18.0" />
+                                 </font>
+                              </Label>
+                              <TableView prefHeight="334.0" prefWidth="300.0">
+                                 <columns>
+                                    <TableColumn editable="false" prefWidth="100.0" sortable="false" />
+                                    <TableColumn editable="false" prefWidth="200.0" sortable="false" />
+                                 </columns>
+                              </TableView>
+                           </children>
+                        </VBox>
+                     </children>
+                     <padding>
+                        <Insets top="5.0" />
+                     </padding>
+                  </HBox>
+               </content>
+            </Tab>
+        </tabs>
+      </TabPane>
    </children>
 </AnchorPane>
